@@ -1,1 +1,3 @@
 // QUESTIONS DATABASE
+
+const questions = [];
