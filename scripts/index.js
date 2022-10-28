@@ -14,6 +14,7 @@ btnStart.addEventListener("click", () => {
   screenContainer.classList.add("hide");
 
   //mostrar a segunda tela (quiz screen)
+  //.classList.add("show")
 
   //pegando o nome do jogador
   game.player = inputName.value; //enviando o nome do jogador para a class
