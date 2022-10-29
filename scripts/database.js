@@ -1,6 +1,7 @@
 // QUESTIONS DATABASE
 
-exports.allQuestions = [
+// exports.allQuestions;
+const allQuestions = [
   {
     question: "Primeira pergunta teste!",
     awnser: "Primeira resposta correta!",
