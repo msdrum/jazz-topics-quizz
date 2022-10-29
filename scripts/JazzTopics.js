@@ -8,7 +8,7 @@ class JazzTopics {
     this.questions = [];
   }
 
-  //
+  // //pegar as perguntas no documento database.js
   // takeQuestions() {
   //   allQuestions.forEach((element) => {
   //     this.questions.push(element);
