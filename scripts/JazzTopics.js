@@ -1,4 +1,5 @@
 // CLASS
+import { allQuestions } from "./database";
 
 class JazzTopics {
   constructor() {
@@ -9,8 +10,16 @@ class JazzTopics {
 
 //pegar as perguntas no documento database.js
 
-//iterar pelo database.js e escolher 10 perguntas
+//iterar pela lista de perguntas (allQuestions)  e escolher 10 perguntas para colocar no array this.question
 
-//embaralhar a ordem das perguntas e a letra (posição) das respostas
+//embaralhar a ordem das perguntas e a posição das respostas
 
-//
+//setar as perguntas na ordem escolhida
+
+//adicionar o evento de click aos 4 botões existentes (respostas [A,B,C,D])
+
+//checar cada resposta (primeira até a décima)
+
+//caso a resposta esteja correta, seguir para a próxima pergunta ou, se a pergunta tiver sido a última, enviar para a tela FINAL WIN, e colocar o botão de JOGAR NOVAMENTE
+
+//caso a pergunta esteja errada, enviar o jogador para a tela FINAL LOSE e colocar o botão de JOGAR NOVAMENTE
