@@ -7,16 +7,24 @@ const game = new JazzTopics();
 const screenContainer = document.getElementById("sc-container");
 const inputName = document.getElementById("input-name");
 const btnStart = document.getElementById("btn-start");
+const quizScreenContainer = document.getElementById("qs-container");
+const playerName = document.getElementById("name");
 
-//add event Listner no botão JOGAR
+//adicionando o evento de clicar no botão JOGAR
 btnStart.addEventListener("click", () => {
-  //hidding start screen
+  //escondendo a tela inicial
   screenContainer.classList.add("hide");
 
-  //mostrar a segunda tela (quiz screen)
-  //.classList.add("show")
+  //mostrando a tela do jogo
+  quizScreenContainer.className = "show";
 
-  //pegando o nome do jogador
+  //recebendo o nome do jogador
   game.player = inputName.value; //enviando o nome do jogador para a class
-  //console.log(inputName.value);
+  //colocando o nome do jogador no HTML
+  playerName.innerText = game.player;
+  //console.log(playerName.innerText);
+
+  //setGame(); //iniciando a príxima tela
 });
+
+//function setGame() {}
