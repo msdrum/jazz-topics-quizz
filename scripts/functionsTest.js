@@ -31,7 +31,64 @@ const array = [
       "resposta d",
     ],
   },
+  {
+    question: "Quarta pergunta teste!",
+    awnser: "Quarta resposta correta!",
+    options: [
+      "Quarta resposta correta!",
+      "resposta b",
+      "resposta c",
+      "resposta d",
+    ],
+  },
 ];
+
+//opção de array apenas de objetos:
+// const array = [
+//   {
+//     question: "Primeira pergunta teste!",
+//     awnser: "Primeira resposta correta!",
+//     options: {
+//       r1: "a",
+//       r2: "b",
+//       correta: "Primeira resposta correta!",
+//       r3: "d",
+//     },
+//   },
+
+//   {
+//     question: "Segunda pergunta teste!",
+//     awnser: "Segunda resposta correta!",
+//     options: {
+//       r1: "a",
+//       r2: "b",
+//       correta: "Segunda resposta correta!",
+//       r3: "d",
+//     },
+//   },
+
+//   {
+//     question: "Terceira pergunta teste!",
+//     awnser: "Terceira resposta correta!",
+//     options: {
+//       r1: "a",
+//       r2: "b",
+//       correta: "Terceira resposta correta!",
+//       r3: "d",
+//     },
+//   },
+
+//   {
+//     question: "Quarta pergunta teste!",
+//     awnser: "Quarta resposta correta!",
+//     options: {
+//       r1: "a",
+//       r2: "b",
+//       correta: "Quarta resposta correta!",
+//       r3: "d",
+//     },
+//   },
+// ];
 
 //console.log(array);
 
@@ -47,7 +104,7 @@ const array = [
 //console.log(quest)
 
 //capturar a array e randomizar o resultado de exposição:
-function randomQuests(quests) {
+function takeRandomQuests(quests) {
   let randomArray = quests;
   let questChosen = [];
   //console.log(randomArray);
@@ -57,23 +114,26 @@ function randomQuests(quests) {
   });
   //pegando apenas o número de questões desejadas:
   return (questChosen = randomArray.splice(0, 2));
-  //console.log(questChosen);
+  // console.log((questChosen = randomArray.splice(0, 2)));
 }
-//chamando a função  randomQuests():
-//randomQuests(array);
+//chamando a função  takeRandomQuests():
+takeRandomQuests(array);
 
-function splitAwnsers(quests) {
-  let temporary = [];
-  let setQuest = [];
-  //pegando o resultado da função randomQuests (acima) e colocando na variável temporary:
-  temporary = randomQuests(quests);
-  //console.log(temporary);
-  //pegando dentro do array de questões apenas o array de opções de resposta:
-  temporary.forEach((element) => {
-    setQuest.push(element.options);
+//embaralhando as respostas da primeira questão:
+function firstQuestion(array) {
+  let firstArr = takeRandomQuests(array); //pega o array todo de perguntas selecionadas
+  let firstAwnser = firstArr[0]; //pega só a primeira questão selecionada de dentro do array selecionado
+  let questions = firstAwnser.options; //recebe o array de respostas da primeira pergunta
+
+  // console.log(questions)
+  //embaralha o array de respostas da primeira questão
+  questions.sort(() => {
+    return Math.random() - 0.5;
   });
-  //return setQuest;
-  console.log(setQuest);
+  //console.log(firstArr);
+  // console.log(firstAwnser);
+  console.log(questions);
+  // return questions
 }
 
-splitAwnsers(array);
+firstQuestion(array);

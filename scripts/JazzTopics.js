@@ -9,19 +9,6 @@ class JazzTopics {
   }
 
   // //pegar as perguntas no documento database.js
-  // takeQuestions() {
-  //   allQuestions.forEach((element) => {
-  //     this.questions.push(element);
-  //   });
-  //   console.log(this.questions);
-  // }
-
-  // randomQuests() {
-  //   this.questions.sort(() => {
-  //     return Math.random() - 0.5;
-  //   });
-  //   console.log(this.questions);
-  // }
 }
 
 //iterar pela lista de perguntas (allQuestions)  e escolher 10 perguntas para colocar no array this.question
