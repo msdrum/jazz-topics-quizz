@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
 #start-screen {
@@ -38,11 +39,9 @@
 
 #title-start-screen {
   font-size: 3rem;
-  color: #fff;
 }
 
 .label-start-screen {
-  color: #fff;
 }
 
 #start-name {
@@ -62,6 +61,7 @@
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   outline: none;
+  color: #000;
 }
 /* Botão Jogar */
 
@@ -87,7 +87,7 @@
   background-color: #394742;
   /* background-color: #23c483; */
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
+  /* color: #fff; */
   transform: translateY(-7px);
 }
 
@@ -103,19 +103,46 @@
   width: 65%;
   height: 75%;
   border-radius: 50px;
+  padding: 30px;
   /* background: #e0e0e0; */
   background: #e0e0e046;
   /* box-shadow: 36px 36px 72px #bebebe, -36px -36px 72px #ffffff; */
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 30px;
 }
 
 .title-quiz-screen {
-  color: #fff;
+  /* color: #fff; */
+  text-align: center;
+}
+
+.question {
+  /* color: #fff; */
+  display: flex;
+  margin-top: 40px;
+}
+
+.awnsers-box {
+  display: flex;
+  padding: 30px;
+  margin-top: 75px;
+}
+
+.awnsers-list {
+}
+
+.awnser-a {
+}
+
+.awnser-b {
+}
+
+.awnser-c {
+}
+
+.awnser-d {
 }
 
 .show {

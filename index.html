@@ -10,8 +10,11 @@
 </head>
 
 <body>
-
+  <!-- Tela geral que abraça todo o jogo -->
   <section id="start-screen">
+    <!-- tela inicial de captura do nome e botão de jogar -->
+
+
     <div id="sc-container">
       <div>
         <h1 id="title-start-screen">Tópicos em Jazz</h1>
@@ -24,29 +27,39 @@
 
       <div>
         <button id="btn-start">Jogar</button>
-        <!-- colocar o áudio meme da bateria -->
       </div>
+
+
     </div>
 
+
+    <!-- primeira tela do jogo -->
     <div id="qs-container" class="hide">
-      <h2 class="title-quiz-screen">Olá, <span id="name"></span> seja bem vindo!</h2>
+      <div class="title-question">
+        <h2 class="title-quiz-screen">Olá <span id="name"></span>, seja bem vindo!</h2>
+        <h3 class="question">1. <span id="first-question"> xxx</span></h3>
+      </div>
+
+      <!-- box com as respostas -->
+      <div class="awnsers-box">
+        <ol type="A" class="awnsers-list">
+          <li class="awnser-a"></li>
+          <li class="awnser-b"></li>
+          <li class="awnser-c"></li>
+          <li class="awnser-d"></li>
+        </ol>
+
+
+      </div>
+
+
+    </div>
+
+    <div id="final-screen">
 
     </div>
 
   </section>
-
-  <!-- <section id="quiz-screen">
-    <div class="qs-container">
-      <h2>Olá, <span class="name"></span> seja bem vindo!</h2>
-
-    </div>
-
-  </section> -->
-
-  <section id="final-screen">
-
-  </section>
-
 
 
   <!--linking the index.js-->
