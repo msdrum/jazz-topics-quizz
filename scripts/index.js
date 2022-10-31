@@ -9,6 +9,11 @@ const inputName = document.getElementById("input-name");
 const btnStart = document.getElementById("btn-start");
 const quizScreenContainer = document.getElementById("qs-container");
 const playerName = document.getElementById("name");
+const firstQuestion = document.getElementById("first-question");
+const awnserA = document.querySelector(".awnser-a");
+const awnserB = document.querySelector(".awnser-b");
+const awnserC = document.querySelector(".awnser-c");
+const awnserD = document.querySelector(".awnser-d");
 
 //adicionando o evento de clicar no botão JOGAR
 btnStart.addEventListener("click", () => {
