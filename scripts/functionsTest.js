@@ -179,3 +179,7 @@ function firstQuestion(array) {
 }
 
 firstQuestion(array);
+
+// function secondQuestion(array){
+
+// }

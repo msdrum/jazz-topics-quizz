@@ -10,10 +10,7 @@ const btnStart = document.getElementById("btn-start");
 const quizScreenContainer = document.getElementById("qs-container");
 const playerName = document.getElementById("name");
 const firstElementQuestion = document.getElementById("first-question");
-const awnserA = document.querySelector(".awnser-a");
-const awnserB = document.querySelector(".awnser-b");
-const awnserC = document.querySelector(".awnser-c");
-const awnserD = document.querySelector(".awnser-d");
+const allAwnsers = document.querySelectorAll(".awnser");
 
 //adicionando o evento de clicar no botão JOGAR
 btnStart.addEventListener("click", () => {
@@ -29,15 +26,16 @@ btnStart.addEventListener("click", () => {
   playerName.innerText = game.player;
   //console.log(playerName.innerText);
 
-  //colocando a primeira pergunta na tela posterior
-  firstElementQuestion.append(firstAwnser);
-  firstElementQuestion.innerText(firstAwnser);
+  game.startGame();
 
-  //colocando as opções de reposta da primeira pergunta
-  awnserA.innerText = awnserOptions[0];
-  awnserB.innerText = awnserOptions[1];
-  awnserA.innerText = awnserOptions[2];
-  awnserB.innerText = awnserOptions[3];
+  //colocando a primeira pergunta na tela posterior
+  // firstElementQuestion.innerText = game.firstAwnser;
+
+  // //colocando as opções de reposta da primeira pergunta
+  // awnserA.innerText = awnserOptions[0];
+  // awnserB.innerText = awnserOptions[1];
+  // awnserA.innerText = awnserOptions[2];
+  // awnserB.innerText = awnserOptions[3];
 
   //chamar a próxima pergunta
 });

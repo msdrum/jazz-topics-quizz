@@ -47,42 +47,68 @@ class JazzTopics {
         ],
       },
     ];
+    this.round = 0;
   }
 
   // //pegar as perguntas no documento database.js
 
   //capturar a array e randomizar o resultado de exposição:
-  takeRandomQuests() {
-    // let randomArray = this.questions;
-    let questsChosen = [];
-    //console.log(randomArray);
-    //embaralhando a ordem das perguntas:
-    // randomArray.sort(() => {
-    //   return Math.random() - 0.5;
-    // });
+  // takeRandomQuests() {
+  //   // let randomArray = this.questions;
+  //   let questsChosen = [];
+  //   //console.log(randomArray);
+  //   //embaralhando a ordem das perguntas:
+  //   // randomArray.sort(() => {
+  //   //   return Math.random() - 0.5;
+  //   // });
 
-    this.questions.sort(() => {
-      return Math.random() - 0.5;
+  //   this.questions.sort(() => {
+  //     return Math.random() - 0.5;
+  //   });
+  //   //pegando apenas o número de questões desejadas:
+  //   return (questsChosen = this.questions.splice(0, 2));
+  //   // console.log((questChosen = this.questions.splice(0, 2)));
+  // }
+
+  // firstQuestion() {
+  //   let chosenArr = takeRandomQuests(this.questions); //pega o array todo de perguntas selecionadas
+  //   let firstAwnser = chosenArr[0]; //pega só a primeira questão selecionada de dentro do array selecionado
+  //   let awnserOptions = firstAwnser.options; //recebe o array de respostas da primeira pergunta
+
+  //   // console.log(awnserOptions)
+  //   //embaralha o array de respostas da primeira questão
+  //   awnserOptions.sort(() => {
+  //     return Math.random() - 0.5;
+  //   });
+  //   //console.log(chosenArr);
+  //   //console.log(firstAwnser);
+  //   //console.log(awnserOptions);
+  //   return awnserOptions;
+  // }
+
+  startGame() {
+    let question = document.getElementById("first-question");
+    let allAwnsers = document.querySelectorAll(".awnser");
+
+    question.innerText = this.questions[this.round].question;
+
+    // console.log(allAwnsers);
+
+    allAwnsers.forEach((btn, i) => {
+      console.log(this.questions.options);
+      btn.innerText = this.questions[this.round].options[i];
+      btn.addEventListener("click", () => {
+        // console.log(btn.textContent);
+        if (btn.textContent === this.questions[this.round].awnser) {
+          console.log("você acertou!");
+          // return this.nextQuestion();
+        }
+      });
     });
-    //pegando apenas o número de questões desejadas:
-    return (questsChosen = this.questions.splice(0, 2));
-    // console.log((questChosen = this.questions.splice(0, 2)));
   }
 
-  firstQuestion() {
-    let chosenArr = takeRandomQuests(this.questions); //pega o array todo de perguntas selecionadas
-    let firstAwnser = chosenArr[0]; //pega só a primeira questão selecionada de dentro do array selecionado
-    let awnserOptions = firstAwnser.options; //recebe o array de respostas da primeira pergunta
-
-    // console.log(awnserOptions)
-    //embaralha o array de respostas da primeira questão
-    awnserOptions.sort(() => {
-      return Math.random() - 0.5;
-    });
-    //console.log(chosenArr);
-    //console.log(firstAwnser);
-    console.log(awnserOptions);
-    // return awnserOptions
+  nextQuestion() {
+    this.round++;
   }
 }
 
