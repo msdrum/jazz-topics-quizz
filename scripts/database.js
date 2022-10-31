@@ -64,7 +64,7 @@
 const jazzQuestions = [
   {
     question:
-      "Em 1917 foi gravado o primeiro disco de jazz da história, pela gravadora Victor. Qual era o nome da banda que gravou esse disco?",
+      "Em 1917 foi gravado o primeiro disco de jazz da história.O disco foi lançado pela gravadora Victor. Qual era o nome da banda que gravou esse disco?",
     awnser: "The Orginal Dixieland Jazz Band",
     options: [
       "The Orginal Dixieland Jazz Band",
@@ -81,7 +81,7 @@ const jazzQuestions = [
   },
   {
     question:
-      "Em 1923, após assitir ao concerto de um grande músico em Washington, Duke Ellington resolveu ir morar em Nova Iorque e tentar a vida como músico nesta cidade. Qual era o nome desse músico?",
+      "Em 1923, após assitir o concerto de um grande músico em Washington, Duke Ellington resolveu ir morar em Nova Iorque e tentar a vida como músico nesta cidade. Qual era o nome desse músico?",
     awnser: "Sidney Bechet",
     options: [
       "Sidney Bechet",
@@ -103,14 +103,9 @@ const jazzQuestions = [
   },
   {
     question:
-      "O advento da Lei Sêca no EUA trouxe um grande mercado paralelo de clubes clandestinos, e dentre esses clubes havia um no Harlem administrado por gângsters, que viria a abrigar a orquestra de Duke Ellington por muito tempo. No final de 1927, a rádio CBS passou a transmitir as apresentações por todo os EUA. Qual era o nome desse clube? ",
+      "O advento da Lei Sêca no EUA trouxe um grande mercado paralelo de clubes clandestinos, dentre esses clubes, havia um no Harlem administrado por gângsters que viria a abrigar a orquestra de Duke Ellington por muito tempo. No final de 1927, a rádio CBS passou a transmitir as apresentações ocorridas no local para todo os EUA. Qual era o nome desse clube? ",
     awnser: "Cotton Club",
-    options: [
-      "Cotton Club",
-      "Roseland Ballroom",
-      "Savoy Ballroom",
-      "Palomar Club",
-    ],
+    options: ["Cotton Club", "Roseland Club", "Savoy Club", "Palomar Club"],
   },
   {
     question: "Qual a estrutura harmônica básica de um blues de 12 compassos?",

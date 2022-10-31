@@ -148,14 +148,14 @@ const array = [
 //capturar a array e randomizar o resultado de exposição:
 function takeRandomQuests(quests) {
   let randomArray = quests;
-  let questChosen = [];
+  let questsChosen = [];
   //console.log(randomArray);
   //embaralhando a ordem das perguntas:
   randomArray.sort(() => {
     return Math.random() - 0.5;
   });
   //pegando apenas o número de questões desejadas:
-  return (questChosen = randomArray.splice(0, 2)); //o splice será de 0 à 5
+  return (questsChosen = randomArray.splice(0, 2)); //o splice será de 0 à 5
   // console.log((questChosen = randomArray.splice(0, 2)));
 }
 //chamando a função  takeRandomQuests():
@@ -163,8 +163,8 @@ takeRandomQuests(array);
 
 //embaralhando as respostas da primeira questão:
 function firstQuestion(array) {
-  let firstArr = takeRandomQuests(array); //pega o array todo de perguntas selecionadas
-  let firstAwnser = firstArr[0]; //pega só a primeira questão selecionada de dentro do array selecionado
+  let chosenArr = takeRandomQuests(array); //pega o array todo de perguntas selecionadas
+  let firstAwnser = chosenArr[0]; //pega só a primeira questão selecionada de dentro do array selecionado
   let awnserOptions = firstAwnser.options; //recebe o array de respostas da primeira pergunta
 
   // console.log(awnserOptions)
@@ -172,8 +172,8 @@ function firstQuestion(array) {
   awnserOptions.sort(() => {
     return Math.random() - 0.5;
   });
-  //console.log(firstArr);
-  console.log(firstAwnser);
+  console.log(chosenArr);
+  //console.log(firstAwnser);
   console.log(awnserOptions);
   // return awnserOptions
 }

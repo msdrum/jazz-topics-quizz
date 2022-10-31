@@ -9,7 +9,7 @@ const inputName = document.getElementById("input-name");
 const btnStart = document.getElementById("btn-start");
 const quizScreenContainer = document.getElementById("qs-container");
 const playerName = document.getElementById("name");
-const firstQuestion = document.getElementById("first-question");
+const firstElementQuestion = document.getElementById("first-question");
 const awnserA = document.querySelector(".awnser-a");
 const awnserB = document.querySelector(".awnser-b");
 const awnserC = document.querySelector(".awnser-c");
@@ -29,7 +29,17 @@ btnStart.addEventListener("click", () => {
   playerName.innerText = game.player;
   //console.log(playerName.innerText);
 
-  //setGame(); //iniciando a príxima tela
+  //colocando a primeira pergunta na tela posterior
+  firstElementQuestion.append(firstAwnser);
+  firstElementQuestion.innerText(firstAwnser);
+
+  //colocando as opções de reposta da primeira pergunta
+  awnserA.innerText = awnserOptions[0];
+  awnserB.innerText = awnserOptions[1];
+  awnserA.innerText = awnserOptions[2];
+  awnserB.innerText = awnserOptions[3];
+
+  //chamar a próxima pergunta
 });
 
 //function setGame() {}

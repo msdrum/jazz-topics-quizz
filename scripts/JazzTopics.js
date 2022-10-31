@@ -5,10 +5,85 @@
 class JazzTopics {
   constructor() {
     this.player = "";
-    this.questions = [];
+    this.questions = [
+      {
+        question: "Primeira pergunta teste!",
+        awnser: "Primeira resposta correta!",
+        options: [
+          "resposta a",
+          "Primeira resposta correta!",
+          "resposta c",
+          "resposta d",
+        ],
+      },
+      {
+        question: "Segunda pergunta teste!",
+        awnser: "Segunda resposta correta!",
+        options: [
+          "resposta a",
+          "resposta b",
+          "resposta c",
+          "Segunda resposta correta!",
+        ],
+      },
+      {
+        question: "Terceira pergunta teste!",
+        awnser: "Terceira resposta correta!",
+        options: [
+          "resposta a",
+          "resposta b",
+          "Terceira resposta correta!",
+          "resposta d",
+        ],
+      },
+      {
+        question: "Quarta pergunta teste!",
+        awnser: "Quarta resposta correta!",
+        options: [
+          "Quarta resposta correta!",
+          "resposta b",
+          "resposta c",
+          "resposta d",
+        ],
+      },
+    ];
   }
 
   // //pegar as perguntas no documento database.js
+
+  //capturar a array e randomizar o resultado de exposição:
+  takeRandomQuests() {
+    // let randomArray = this.questions;
+    let questsChosen = [];
+    //console.log(randomArray);
+    //embaralhando a ordem das perguntas:
+    // randomArray.sort(() => {
+    //   return Math.random() - 0.5;
+    // });
+
+    this.questions.sort(() => {
+      return Math.random() - 0.5;
+    });
+    //pegando apenas o número de questões desejadas:
+    return (questsChosen = this.questions.splice(0, 2));
+    // console.log((questChosen = this.questions.splice(0, 2)));
+  }
+
+  firstQuestion() {
+    let chosenArr = takeRandomQuests(this.questions); //pega o array todo de perguntas selecionadas
+    let firstAwnser = chosenArr[0]; //pega só a primeira questão selecionada de dentro do array selecionado
+    let awnserOptions = firstAwnser.options; //recebe o array de respostas da primeira pergunta
+
+    // console.log(awnserOptions)
+    //embaralha o array de respostas da primeira questão
+    awnserOptions.sort(() => {
+      return Math.random() - 0.5;
+    });
+    //console.log(chosenArr);
+    //console.log(firstAwnser);
+    console.log(awnserOptions);
+    // return awnserOptions
+  }
 }
 
 //iterar pela lista de perguntas (allQuestions)  e escolher 10 perguntas para colocar no array this.question
