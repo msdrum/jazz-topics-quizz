@@ -101,7 +101,7 @@ class JazzTopics {
         // console.log(btn.textContent);
         if (btn.textContent === this.questions[this.round].awnser) {
           console.log("você acertou!");
-          // return this.nextQuestion();
+          return this.nextQuestion();
         }
       });
     });
@@ -109,6 +109,8 @@ class JazzTopics {
 
   nextQuestion() {
     this.round++;
+    // console.log(this.round);
+    this.startGame();
   }
 }
 
