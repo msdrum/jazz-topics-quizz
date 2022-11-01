@@ -25,19 +25,11 @@ btnStart.addEventListener("click", () => {
   //colocando o nome do jogador no HTML
   playerName.innerText = game.player;
   //console.log(playerName.innerText);
-
+  game.takeRandomQuests();
+  //
   game.startGame();
-
-  //colocando a primeira pergunta na tela posterior
-  // firstElementQuestion.innerText = game.firstAwnser;
-
-  // //colocando as opções de reposta da primeira pergunta
-  // awnserA.innerText = awnserOptions[0];
-  // awnserB.innerText = awnserOptions[1];
-  // awnserA.innerText = awnserOptions[2];
-  // awnserB.innerText = awnserOptions[3];
 
   //chamar a próxima pergunta
 });
 
-//function setGame() {}
+game.checkAwnser();

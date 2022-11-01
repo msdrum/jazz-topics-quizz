@@ -110,7 +110,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   /* justify-content: center; */
-  gap: 30px;
+  /* gap: 30px; */
 }
 
 .title-quiz-screen {
@@ -126,8 +126,8 @@
 
 .awnsers-box {
   display: flex;
-  padding: 30px;
-  margin-top: 75px;
+  padding: 0px;
+  margin-top: 25px;
   gap: 25px;
   flex-direction: column;
   flex-wrap: wrap;

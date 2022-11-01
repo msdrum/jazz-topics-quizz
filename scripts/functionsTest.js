@@ -183,3 +183,34 @@ firstQuestion(array);
 // function secondQuestion(array){
 
 // }
+
+/////////////////////////////////////////////////
+
+//ARQUIVO DE BACKUP
+
+// startGame() {
+//   let question = document.getElementById("first-question");
+//   let allAwnsers = document.querySelectorAll(".awnser");
+
+//   question.innerText = this.questions[this.round].question;
+
+//   // console.log(allAwnsers);
+
+//   allAwnsers.forEach((btn, i) => {
+//     console.log(this.questions.options);
+//     btn.innerText = this.questions[this.round].options[i];
+//     btn.addEventListener("click", () => {
+//       // console.log(btn.textContent);
+//       if (btn.textContent === this.questions[this.round].awnser) {
+//         console.log("você acertou!");
+//         return this.nextQuestion();
+//       }
+//     });
+//   });
+// }
+
+// nextQuestion() {
+//   this.round++;
+//   // console.log(this.round);
+//   this.startGame();
+// }
