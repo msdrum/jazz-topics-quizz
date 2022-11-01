@@ -205,12 +205,36 @@ class JazzTopics {
         if (btn.textContent === this.questChosen[this.round].awnser) {
           console.log("você acertou!");
           this.nextQuestion();
-        } else {
-          console.log("Você errou");
         }
+        if (btn.textContent !== this.questChosen[this.round].awnser) {
+          console.log("você errou!");
+          this.loseGame();
+        } //else {
+        //   console.log("Você errou");
+        // }
       });
     });
     // return this.nextQuestion();
+  }
+
+  //setando a tela de derrota e chamando novamente o início do jogo
+  loseGame() {
+    const quizScreenContainer = document.getElementById("qs-container");
+    const loseScreen = document.getElementById("final-screen-lose");
+    let playAgain = document.querySelector("#bnt-final");
+
+    quizScreenContainer.classList.add("hide");
+    loseScreen.className = "show";
+
+    playAgain.addEventListener("click", () => {
+      console.log("clicado");
+
+      loseScreen.classList.add("hide");
+      quizScreenContainer.className = "show";
+      this.round = 0;
+      this.takeRandomQuests();
+      this.startGame();
+    });
   }
 }
 
