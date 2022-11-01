@@ -6,46 +6,6 @@ class JazzTopics {
   constructor() {
     this.player = "";
     this.questions = [
-      // {
-      //   question: "Primeira pergunta teste!",
-      //   awnser: "Primeira resposta correta!",
-      //   options: [
-      //     "resposta a",
-      //     "Primeira resposta correta!",
-      //     "resposta c",
-      //     "resposta d",
-      //   ],
-      // },
-      // {
-      //   question: "Segunda pergunta teste!",
-      //   awnser: "Segunda resposta correta!",
-      //   options: [
-      //     "resposta a",
-      //     "resposta b",
-      //     "resposta c",
-      //     "Segunda resposta correta!",
-      //   ],
-      // },
-      // {
-      //   question: "Terceira pergunta teste!",
-      //   awnser: "Terceira resposta correta!",
-      //   options: [
-      //     "resposta a",
-      //     "resposta b",
-      //     "Terceira resposta correta!",
-      //     "resposta d",
-      //   ],
-      // },
-      // {
-      //   question: "Quarta pergunta teste!",
-      //   awnser: "Quarta resposta correta!",
-      //   options: [
-      //     "Quarta resposta correta!",
-      //     "resposta b",
-      //     "resposta c",
-      //     "resposta d",
-      //   ],
-      // },
       {
         question:
           "Em 1917 foi gravado o primeiro disco de jazz da história.O disco foi lançado pela gravadora Victor. Qual era o nome da banda que gravou esse disco?",
@@ -230,9 +190,11 @@ class JazzTopics {
 
   //setando a tela de vitória e a opção de tentar jogar novamente
   winGame() {
+    const screenContainer = document.getElementById("sc-container");
     const quizScreenContainer = document.getElementById("qs-container");
     const winScreen = document.getElementById("final-screen-win");
     let playAgain = document.querySelector("#bnt-final-win");
+    let quitGame = document.querySelector("#inicial-screen");
 
     quizScreenContainer.classList.add("hide");
     winScreen.className = "show";
@@ -242,6 +204,14 @@ class JazzTopics {
 
       winScreen.classList.add("hide");
       quizScreenContainer.className = "show";
+      this.round = 0;
+      this.takeRandomQuests();
+      this.startGame();
+    });
+
+    quitGame.addEventListener("click", () => {
+      winScreen.classList.add("hide");
+      screenContainer.className = "show";
       this.round = 0;
       this.takeRandomQuests();
       this.startGame();
