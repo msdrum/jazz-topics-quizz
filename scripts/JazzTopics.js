@@ -161,12 +161,9 @@ class JazzTopics {
   startGame() {
     let question = document.getElementById("first-question");
     let allAwnsers = document.querySelectorAll(".awnser");
-    // let reandomArray = this.takeRandomQuests(this.questions);
-    // question.innerText = this.questions[this.round].question;
-    question.innerText = this.questChosen[this.round].question;
 
+    question.innerText = this.questChosen[this.round].question;
     allAwnsers.forEach((btn, i) => {
-      // btn.innerText = this.questions[this.round].options[i];
       btn.innerText = this.questChosen[this.round].options[i];
     });
 
@@ -184,22 +181,12 @@ class JazzTopics {
     allAwnsers.forEach((btn, i) => {
       btn.innerText = this.questChosen[this.round].options[i];
     });
-    // this.startGame();
   }
 
   checkAwnser() {
     let allAwnsers = document.querySelectorAll(".awnser");
 
     allAwnsers.forEach((btn) => {
-      // btn.addEventListener("click", () => {
-      //   // console.log(btn.textContent);
-      //   if (btn.textContent === this.questChosen[this.round].awnser) {
-      //     console.log("você acertou!");
-      //     this.nextQuestion();
-      //   } else {
-      //     console.log("Você errou");
-      //   }
-      // });
       btn.addEventListener("click", () => {
         // console.log(btn.textContent);
         if (
@@ -208,7 +195,6 @@ class JazzTopics {
         ) {
           console.log("VOCÊ GANHOU!!");
           this.winGame();
-          // this.nextQuestion();
         }
         if (btn.textContent === this.questChosen[this.round].awnser) {
           console.log("você acertou!");
@@ -217,15 +203,12 @@ class JazzTopics {
         if (btn.textContent !== this.questChosen[this.round].awnser) {
           console.log("você errou!");
           this.loseGame();
-        } //else {
-        //   console.log("Você Ganhou!");
-        // }
+        }
       });
     });
-    // return this.nextQuestion();
   }
 
-  //setando a tela de derrota e chamando novamente o início do jogo
+  //setando a tela de derrota e a opção de tentar jogar novamente
   loseGame() {
     const quizScreenContainer = document.getElementById("qs-container");
     const loseScreen = document.getElementById("final-screen-lose");
@@ -245,6 +228,7 @@ class JazzTopics {
     });
   }
 
+  //setando a tela de vitória e a opção de tentar jogar novamente
   winGame() {
     const quizScreenContainer = document.getElementById("qs-container");
     const winScreen = document.getElementById("final-screen-win");
@@ -264,17 +248,3 @@ class JazzTopics {
     });
   }
 }
-
-//iterar pela lista de perguntas (allQuestions)  e escolher 10 perguntas para colocar no array this.question
-
-//embaralhar a ordem das perguntas e a posição das respostas
-
-//setar as perguntas na ordem escolhida
-
-//adicionar o evento de click aos 4 botões existentes (respostas [A,B,C,D])
-
-//checar cada resposta (primeira até a décima)
-
-//caso a resposta esteja correta, seguir para a próxima pergunta ou, se a pergunta tiver sido a última, enviar para a tela FINAL WIN, e colocar o botão de JOGAR NOVAMENTE
-
-//caso a pergunta esteja errada, enviar o jogador para a tela FINAL LOSE e colocar o botão de JOGAR NOVAMENTE
