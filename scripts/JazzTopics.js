@@ -202,6 +202,14 @@ class JazzTopics {
       // });
       btn.addEventListener("click", () => {
         // console.log(btn.textContent);
+        if (
+          btn.textContent === this.questChosen[this.round].awnser &&
+          this.round === 4
+        ) {
+          console.log("VOCÊ GANHOU!!");
+          this.winGame();
+          // this.nextQuestion();
+        }
         if (btn.textContent === this.questChosen[this.round].awnser) {
           console.log("você acertou!");
           this.nextQuestion();
@@ -210,7 +218,7 @@ class JazzTopics {
           console.log("você errou!");
           this.loseGame();
         } //else {
-        //   console.log("Você errou");
+        //   console.log("Você Ganhou!");
         // }
       });
     });
@@ -230,6 +238,25 @@ class JazzTopics {
       console.log("clicado");
 
       loseScreen.classList.add("hide");
+      quizScreenContainer.className = "show";
+      this.round = 0;
+      this.takeRandomQuests();
+      this.startGame();
+    });
+  }
+
+  winGame() {
+    const quizScreenContainer = document.getElementById("qs-container");
+    const winScreen = document.getElementById("final-screen-win");
+    let playAgain = document.querySelector("#bnt-final-win");
+
+    quizScreenContainer.classList.add("hide");
+    winScreen.className = "show";
+
+    playAgain.addEventListener("click", () => {
+      console.log("clicado");
+
+      winScreen.classList.add("hide");
       quizScreenContainer.className = "show";
       this.round = 0;
       this.takeRandomQuests();
