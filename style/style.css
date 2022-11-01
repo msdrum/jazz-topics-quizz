@@ -41,9 +41,6 @@
   font-size: 3rem;
 }
 
-.label-start-screen {
-}
-
 #start-name {
   display: flex;
   flex-direction: column;
