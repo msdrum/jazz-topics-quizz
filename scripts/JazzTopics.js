@@ -1,6 +1,6 @@
 // CLASS
-//import { allQuestions } from "./database";
-// const allQuestions = require("./database");
+// import jazzQuestions from "./database";
+// const jazzQuestions = require("./database");
 
 class JazzTopics {
   constructor() {
@@ -170,9 +170,11 @@ class JazzTopics {
 
   //setando a tela de derrota e a opção de tentar jogar novamente
   loseGame() {
+    const screenContainer = document.getElementById("sc-container");
     const quizScreenContainer = document.getElementById("qs-container");
     const loseScreen = document.getElementById("final-screen-lose");
     let playAgain = document.querySelector("#bnt-final");
+    let quitGame = document.querySelector("#init-screen");
 
     quizScreenContainer.classList.add("hide");
     loseScreen.className = "show";
@@ -182,6 +184,14 @@ class JazzTopics {
 
       loseScreen.classList.add("hide");
       quizScreenContainer.className = "show";
+      this.round = 0;
+      this.takeRandomQuests();
+      this.startGame();
+    });
+
+    quitGame.addEventListener("click", () => {
+      loseScreen.classList.add("hide");
+      screenContainer.className = "show";
       this.round = 0;
       this.takeRandomQuests();
       this.startGame();
