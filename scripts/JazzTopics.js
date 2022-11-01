@@ -191,6 +191,15 @@ class JazzTopics {
     let allAwnsers = document.querySelectorAll(".awnser");
 
     allAwnsers.forEach((btn) => {
+      // btn.addEventListener("click", () => {
+      //   // console.log(btn.textContent);
+      //   if (btn.textContent === this.questChosen[this.round].awnser) {
+      //     console.log("você acertou!");
+      //     this.nextQuestion();
+      //   } else {
+      //     console.log("Você errou");
+      //   }
+      // });
       btn.addEventListener("click", () => {
         // console.log(btn.textContent);
         if (btn.textContent === this.questChosen[this.round].awnser) {
