@@ -119,11 +119,11 @@ class JazzTopics {
   }
 
   startGame() {
-    // let questionNumber = document.querySelector(".question-number");
+    let questionNumber = document.querySelector(".question-number");
     let question = document.getElementById("first-question");
     let allAwnsers = document.querySelectorAll(".awnser");
 
-    // questionNumber.textContent = this.round + 1;
+    questionNumber.innerText = `${this.round + 1}.`;
     question.innerText = this.questChosen[this.round].question;
     allAwnsers.forEach((btn, i) => {
       btn.innerText = this.questChosen[this.round].options[i];
@@ -135,9 +135,11 @@ class JazzTopics {
   nextQuestion() {
     this.round++;
     // console.log(this.round);
+    let questionNumber = document.querySelector(".question-number");
     let question = document.getElementById("first-question");
     let allAwnsers = document.querySelectorAll(".awnser");
 
+    questionNumber.innerText = `${this.round + 1}.`;
     question.innerText = this.questChosen[this.round].question;
 
     allAwnsers.forEach((btn, i) => {
