@@ -303,7 +303,11 @@
   }
 
   #title-start-screen {
-    font-size: 2.6rem;
+    font-size: 2.15rem;
+  }
+
+  #start-name {
+    font-size: 1.6rem;
   }
 
   #label-start-screen {
