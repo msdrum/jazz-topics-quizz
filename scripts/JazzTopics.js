@@ -170,6 +170,7 @@ class JazzTopics {
 
   //setando a tela de derrota e a opção de tentar jogar novamente
   loseGame() {
+    const loserName = document.querySelector(".loser-name");
     const screenContainer = document.getElementById("sc-container");
     const quizScreenContainer = document.getElementById("qs-container");
     const loseScreen = document.getElementById("final-screen-lose");
@@ -178,6 +179,8 @@ class JazzTopics {
 
     quizScreenContainer.classList.add("hide");
     loseScreen.className = "show";
+
+    loserName.innerText = this.player;
 
     playAgain.addEventListener("click", () => {
       console.log("clicado");
@@ -200,6 +203,7 @@ class JazzTopics {
 
   //setando a tela de vitória e a opção de tentar jogar novamente
   winGame() {
+    const winName = document.querySelector(".win-name");
     const screenContainer = document.getElementById("sc-container");
     const quizScreenContainer = document.getElementById("qs-container");
     const winScreen = document.getElementById("final-screen-win");
@@ -208,6 +212,8 @@ class JazzTopics {
 
     quizScreenContainer.classList.add("hide");
     winScreen.className = "show";
+
+    winName.innerText = this.player;
 
     playAgain.addEventListener("click", () => {
       console.log("clicado");

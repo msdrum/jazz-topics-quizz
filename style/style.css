@@ -165,8 +165,10 @@
 #final-screen-lose {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 35px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
 }
 
 #bnt-final {
@@ -200,8 +202,10 @@
 #final-screen-win {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 35px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
 }
 
 #bnt-final-win {
@@ -294,6 +298,22 @@
 
 .hide {
   display: none !important;
+}
+
+/* imagens e gifs das últimas páginas */
+
+.miles-meme {
+  max-width: 250px;
+  max-height: 240px;
+  width: auto;
+  height: auto;
+}
+
+.cool {
+  max-width: 250px;
+  max-height: 175px;
+  width: auto;
+  height: auto;
 }
 
 @media all and (min-width: 300px) and (max-width: 375px) {
