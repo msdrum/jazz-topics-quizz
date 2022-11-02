@@ -153,7 +153,6 @@
 
 .awnser:hover {
   background-color: #394742;
-  /* background-color: #23c483; */
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
@@ -304,11 +303,11 @@
   }
 
   #title-start-screen {
-    font-size: 2.75rem;
+    font-size: 2.6rem;
   }
 
   #label-start-screen {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
   }
 
   #qs-container {
@@ -324,6 +323,13 @@
 
   #first-question {
     font-size: 1em;
+  }
+
+  .awnser:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+    transform: none;
   }
 }
 
@@ -355,6 +361,13 @@
   #first-question {
     font-size: 1em;
   }
+
+  .awnser:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+    transform: none;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -376,6 +389,13 @@
 
   #first-question {
     font-size: 1em;
+  }
+
+  .awnser:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+    transform: none;
   }
 }
 
@@ -423,5 +443,11 @@
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+  }
+  .awnser:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+    transform: none;
   }
 }
