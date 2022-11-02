@@ -296,6 +296,52 @@
   display: none !important;
 }
 
+@media all and (min-width: 300px) and (max-width: 375px) {
+  #sc-container {
+    width: 100%;
+    height: auto;
+  }
+
+  #title-start-screen {
+    font-size: 2.6rem;
+  }
+
+  #label-start-screen {
+    font-size: 1.6rem;
+  }
+
+  #qs-container {
+    width: 90%;
+    height: auto;
+  }
+  .title-quiz-screen {
+    /* color: #fff; */
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
+
+  #first-question {
+    font-size: 0.75em;
+  }
+
+  .awnsers-box {
+    display: flex;
+    padding: 0px;
+    margin-top: 15px;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .awnser:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+    transform: none;
+  }
+}
+
 @media all and (min-width: 375px) and (max-width: 414px) {
   #sc-container {
     width: 100%;
