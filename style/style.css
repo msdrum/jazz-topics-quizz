@@ -202,8 +202,10 @@
 #final-screen-win {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 35px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
 }
 
 #bnt-final-win {
@@ -301,8 +303,15 @@
 /* imagens e gifs das últimas páginas */
 
 .miles-meme {
-  max-width: 200px;
-  max-height: 195px;
+  max-width: 250px;
+  max-height: 240px;
+  width: auto;
+  height: auto;
+}
+
+.cool {
+  max-width: 250px;
+  max-height: 175px;
   width: auto;
   height: auto;
 }
