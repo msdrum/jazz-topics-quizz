@@ -153,7 +153,6 @@
 
 .awnser:hover {
   background-color: #394742;
-  /* background-color: #23c483; */
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
@@ -297,11 +296,116 @@
   display: none !important;
 }
 
-/* @media all and (max-width: 768px) {
-} */
-
-@media all and (max-width: 992px) {
+@media all and (min-width: 375px) and (max-width: 414px) {
   #sc-container {
+    width: 100%;
+    height: auto;
+  }
+
+  #title-start-screen {
+    font-size: 2.6rem;
+  }
+
+  #label-start-screen {
+    font-size: 1.6rem;
+  }
+
+  #qs-container {
+    width: 90%;
+    height: auto;
+  }
+  .title-quiz-screen {
+    /* color: #fff; */
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+  }
+
+  #first-question {
+    font-size: 1em;
+  }
+
+  .awnser:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+@media all and (min-width: 414px) and (max-width: 768px) {
+  #sc-container {
+    width: 100%;
+    height: auto;
+  }
+
+  #title-start-screen {
+    font-size: 2.75rem;
+  }
+
+  #label-start-screen {
+    font-size: 1.75rem;
+  }
+
+  #qs-container {
+    width: 90%;
+    height: auto;
+  }
+  .title-quiz-screen {
+    /* color: #fff; */
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+  }
+
+  #first-question {
+    font-size: 1em;
+  }
+
+  .awnser:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  #sc-container {
+    width: 90%;
+    height: auto;
+  }
+
+  #qs-container {
+    width: 90%;
+    height: auto;
+  }
+  .title-quiz-screen {
+    /* color: #fff; */
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+  }
+
+  #first-question {
+    font-size: 1em;
+  }
+
+  .awnser:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1024px) {
+  #sc-container {
+    width: 90%;
+    height: auto;
+  }
+
+  #qs-container {
     width: 90%;
     height: auto;
   }
@@ -339,5 +443,11 @@
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+  }
+  .awnser:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+    transform: none;
   }
 }
