@@ -165,8 +165,10 @@
 #final-screen-lose {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 35px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
 }
 
 #bnt-final {
@@ -294,6 +296,15 @@
 
 .hide {
   display: none !important;
+}
+
+/* imagens e gifs das últimas páginas */
+
+.miles-meme {
+  max-width: 200px;
+  max-height: 195px;
+  width: auto;
+  height: auto;
 }
 
 @media all and (min-width: 300px) and (max-width: 375px) {
