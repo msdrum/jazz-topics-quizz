@@ -8,7 +8,7 @@
 }
 
 #start-screen {
-  background-image: url(../assets/green-slate.jpg);
+  background-image: url(../assets/green-slate-thin.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
