@@ -8,7 +8,7 @@ class JazzTopics {
     this.questions = [
       {
         question:
-          "Em 1917 foi gravado o primeiro disco de jazz da história.O disco foi lançado pela gravadora Victor. Qual era o nome da banda que gravou esse disco?",
+          "Em 1917 foi gravado o primeiro disco de jazz da história. O disco foi lançado pela gravadora Victor. Qual era o nome da banda que gravou esse disco?",
         awnser: "The Orginal Dixieland Jazz Band",
         options: [
           "The Original Creole Orchestra",
@@ -70,7 +70,7 @@ class JazzTopics {
       },
       {
         question:
-          "Na década de 20, havia uma cantora que foi considerada a maior catora de blues do seu tempo.Ela possuia tempramento forte, viajava em seu próprio vagão de trem e trabalhou em um dos primeiros filmes sonoros que tinham em seu elenco atores negros.",
+          "Na década de 20, havia uma cantora que foi considerada a maior cantora de blues do seu tempo.Ela possuia temperamento forte, viajava em seu próprio vagão de trem e trabalhou em um dos primeiros filmes sonoros que tinham em seu elenco atores negros. Qual era o seu nome?",
         awnser: "Bessie Smith",
         options: [
           "Billie Holiday",
@@ -88,6 +88,55 @@ class JazzTopics {
           "Benny Goodman",
           "Duke Ellington",
           "Fletcher Henderson",
+        ],
+      },
+      {
+        question:
+          "Qual baterista gravou o icônico disco 'A Love Supreme' do John Coltrane?",
+        awnser: "Elvin Jones",
+        options: [
+          "Art Blakey",
+          "Kenny Clarke",
+          "Philly Joe Jones",
+          "Elvin Jones",
+        ],
+      },
+      {
+        question:
+          "Qual o nome do disco de Miles Davis que ficou conhecido como o álbum mais vendido do jazz?",
+        awnser: "Kind of Blue",
+        options: [
+          "Birth Of The Cool",
+          "Kind of Blue",
+          "Round About Midnight",
+          "Bitches Brew",
+        ],
+      },
+      {
+        question:
+          "Qual estilo do jazz teve como precursores os músicos Charlie Parker e Dizzy Gillespie?",
+        awnser: "Bebop",
+        options: ["Bebop", "Swing", "Cool Jazz", "Free Jazz"],
+      },
+      {
+        question: "Qual o compositor da música 'Straight No Chaser'?",
+        awnser: "Thelonius Monk",
+        options: [
+          "Thelonius Monk",
+          "John Coltrane",
+          "Miles Davis",
+          "Duke Ellington",
+        ],
+      },
+      {
+        question:
+          "A primeira gravação em estúdio de Thelonius Monk foi como pianista do grupo de:",
+        awnser: "Coleman Hawkins",
+        options: [
+          "Dizzy Gillespie",
+          "John Coltrane",
+          "Coleman Hawkins",
+          "Charlie Parker",
         ],
       },
       {
